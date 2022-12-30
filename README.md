@@ -1,8 +1,8 @@
-#unity project
+#tiny unity game
 
 ###vscode setup for unity
 
-*may not actually need this step?*
+*may not actually need this first step?*
 ~~install latest version of .NET for mac~~
 ~~https://dotnet.microsoft.com/en-us/download~~
 
