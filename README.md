@@ -1,9 +1,21 @@
 # tiny unity game
 
+## unity download + install
 
-### vscode setup for unity
+you have to make an account, but it's free unless you're making $$$$$ from your games
 
-unity uses Visual Studio as its default code editor, but you can set it to VSCode instead under `Unity > Preferences > External Tools > External Script Editor`. not strictly necessary, but VSCode feels a little bit nicer / faster overall and is a lot more customizable with themes/extensions/etc than the mac version of Visual Studio 
+first you have to download unity hub\
+https://unity.com/
+
+then launch unity hub and install editor version `2021.3.16f1` (most recent LTS). under `Platforms`, choose `WebGL Build Support`
+
+once the editor installs you should be able to open the project from unity hub
+
+## vscode setup for unity
+
+unity uses Visual Studio as its default code editor, but it feels pretty clunky / slow compared to VSCode and doesn't have much in the way of extensions / themes etc
+
+you can tell Unity to use VSCode instead under `Unity > Preferences > External Tools > External Script Editor`
 
 i had to do a few things to make VSCode recognize / autocomplete Unity classes instead of throwing red squigglies:
 
