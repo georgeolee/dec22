@@ -13,10 +13,13 @@ public class Parallax : MonoBehaviour
     private Vector3 lastPlayerPos;
     private Vector2 offset;
 
+    public bool invertX = false;
+    public bool invertY = false;
+
     // Start is called before the first frame update
     void Start()
     {
-        mat = GetComponent<SpriteRenderer>().material;
+        mat = GetComponent<Renderer>().material;
         lastPlayerPos = player.position;
     }
 
@@ -26,7 +29,7 @@ public class Parallax : MonoBehaviour
         if(lastPlayerPos.Equals(player.position) == false){
             Vector3 delta = player.position - lastPlayerPos;
             
-            offset += (Vector2) delta * factor;
+            offset += (Vector2) delta * factor * new Vector2(invertX ? -1 : 1, invertY ? -1 : 1);
             mat.SetVector("_offset", offset);
             lastPlayerPos = player.position;
         }

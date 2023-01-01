@@ -6,9 +6,15 @@ using UnityEngine;
 public class BulletController : MonoBehaviour
 {
     public bool live;
+
     public float speed = 8f;
+
+    public float damage = 1f;
+
+    //how long to stay alive for before disappearing if no hit
     public float lifetime = 3f;
 
+    //time since launch
     private float time;
     
     [SerializeField]
@@ -17,7 +23,7 @@ public class BulletController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+            
     }
 
     // Update is called once per frame
@@ -73,9 +79,18 @@ public class BulletController : MonoBehaviour
     }
 
     void OnCollisionEnter2D(Collision2D c){
-        Debug.Log("col");
-        //spawn an explosion
+
+        BulletShootable hitSomething = c.collider.GetComponent<BulletShootable>();
+
+        if(!hitSomething) return;
+
+        hitSomething.TakeHit(this);
+
+        Debug.Log("bullet hit");
+
+        //spawn an explosion  at the collision point
         GameObject explosion = Instantiate(explosionPrefab, transform.position, transform.rotation);
+
 
         Expire();
     }

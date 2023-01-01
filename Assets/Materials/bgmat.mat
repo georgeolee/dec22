@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: bgmat2
+  m_Name: bgmat
   m_Shader: {fileID: -6465566751694194690, guid: 08680777de0ea4b24abf07a863150d32, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -38,13 +38,13 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _angle_offset: 7.63
-    - _brightness: 1.8
-    - _density: 6.11
+    - _angle_offset: 36.2
+    - _brightness: 1.49
+    - _density: 10
     - _floor: 0
-    - _scale: 8.9
+    - _scale: 7.67
     - _timescale: 0.05
     m_Colors:
-    - _offset: {r: 0, g: 0, b: 0, a: 0}
-    - _tint: {r: 1, g: 1, b: 1, a: 0}
+    - _offset: {r: -0.16941804, g: 0.072365746, b: 0, a: 0}
+    - _tint: {r: 0.8117647, g: 0.4623532, b: 0.33333334, a: 0}
   m_BuildTextureStacks: []

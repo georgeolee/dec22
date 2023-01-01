@@ -103,6 +103,9 @@ MonoBehaviour:
   speed: 30
   lifetime: 3
   explosionPrefab: {fileID: 7497916282186692311, guid: e13f8d2e2e1b64fee84300cae1b93d1f, type: 3}
+  layer:
+    serializedVersion: 2
+    m_Bits: 16
 --- !u!61 &-7516976101641921765
 BoxCollider2D:
   m_ObjectHideFlags: 0
